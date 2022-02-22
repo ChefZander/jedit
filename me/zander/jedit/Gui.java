@@ -11,6 +11,7 @@ import javax.swing.AbstractAction;
 import javax.swing.Action;
 import javax.swing.JComponent;
 import javax.swing.JFrame;
+import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.KeyStroke;
 
@@ -77,6 +78,10 @@ public class Gui {
 				}
 			}
 		}).start();
+		
+		//scrolling
+		JScrollPane scroll = new JScrollPane(textfield, JScrollPane.VERTICAL_SCROLLBAR_ALWAYS, JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
+		f.add(scroll);
 		
 		return f;
 	}
